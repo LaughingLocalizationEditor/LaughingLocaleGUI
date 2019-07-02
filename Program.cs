@@ -1,6 +1,7 @@
 ﻿using System;
 using Avalonia;
 using Avalonia.Logging.Serilog;
+using DynamicData;
 using LaughingLocale.ViewModels;
 using LaughingLocale.Views;
 
@@ -28,6 +29,15 @@ namespace LaughingLocale
 			{
 				DataContext = new MainWindowViewModel(),
 			};
+
+			if(window.DataContext is MainWindowViewModel vm)
+			{
+				vm.AddMenuEntry(7, "Test");
+				vm._recentFiles.Add("test.txt");
+				vm._recentFiles.Add("test2.txt");
+				vm._recentFiles.Add("test3.txt");
+				vm._recentFiles.Add("test4.txt");
+			}
 
 			app.Run(window);
 		}

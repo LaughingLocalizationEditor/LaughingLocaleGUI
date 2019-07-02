@@ -1,22 +1,19 @@
-﻿using Avalonia;
+using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 namespace LaughingLocale.Views
 {
-	public class MainWindow : Window
-	{
-		public MainWindow()
-		{
-			InitializeComponent();
-#if DEBUG
-			this.AttachDevTools();
-#endif
-		}
+    public class MainWindow : Window
+    {
+        public MainWindow()
+        {
+            InitializeComponent();
+        }
 
-		private void InitializeComponent()
-		{
-			AvaloniaXamlLoader.Load(this);
-		}
-	}
+        private void InitializeComponent()
+        {
+            AvaloniaXamlLoader.Load(this);
+        }
+    }
 }
