@@ -1,7 +1,7 @@
 ﻿using Avalonia;
 using Avalonia.Markup.Xaml;
 
-namespace LaughingLocaleGUI
+namespace LaughingLocale
 {
 	public class App : Application
 	{

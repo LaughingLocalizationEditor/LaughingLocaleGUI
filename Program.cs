@@ -1,10 +1,10 @@
 ﻿using System;
 using Avalonia;
 using Avalonia.Logging.Serilog;
-using LaughingLocaleGUI.ViewModels;
-using LaughingLocaleGUI.Views;
+using LaughingLocale.ViewModels;
+using LaughingLocale.Views;
 
-namespace LaughingLocaleGUI
+namespace LaughingLocale
 {
 	class Program
 	{

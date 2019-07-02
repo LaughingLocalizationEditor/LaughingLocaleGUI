@@ -2,7 +2,7 @@
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
-namespace LaughingLocaleGUI.Views
+namespace LaughingLocale.Views
 {
 	public class MainWindow : Window
 	{
@@ -10,7 +10,7 @@ namespace LaughingLocaleGUI.Views
 		{
 			InitializeComponent();
 #if DEBUG
-            this.AttachDevTools();
+			this.AttachDevTools();
 #endif
 		}
 

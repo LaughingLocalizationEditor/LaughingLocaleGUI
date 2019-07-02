@@ -1,9 +1,10 @@
 using System;
 using Avalonia.Controls;
 using Avalonia.Controls.Templates;
-using LaughingLocaleGUI.ViewModels;
+using LaughingLocale.ViewModels;
+using ReactiveUI;
 
-namespace LaughingLocaleGUI
+namespace LaughingLocale
 {
 	public class ViewLocator : IDataTemplate
 	{
@@ -26,7 +27,7 @@ namespace LaughingLocaleGUI
 
 		public bool Match(object data)
 		{
-			return data is ViewModelBase;
+			return data is ReactiveObject;
 		}
 	}
 }
